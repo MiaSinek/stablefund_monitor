@@ -47,6 +47,7 @@ gem "bootsnap", require: false
 
 
 gem "cable_ready", github: "stimulusreflex/cable_ready", branch: "master"
+gem 'stimulus_reflex', github: 'stimulusreflex/stimulus_reflex', branch: 'master'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -76,5 +77,3 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
-gem "stimulus_reflex", "= 3.5.0.pre9"
