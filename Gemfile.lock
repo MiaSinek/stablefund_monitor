@@ -1,3 +1,17 @@
+GIT
+  remote: https://github.com/stimulusreflex/cable_ready.git
+  revision: 05e2f1bcd4265da315960159c0d6c96875ad2e9c
+  branch: master
+  specs:
+    cable_ready (5.0.0.pre9)
+      actioncable (>= 5.2)
+      actionpack (>= 5.2)
+      actionview (>= 5.2)
+      activerecord (>= 5.2)
+      activesupport (>= 5.2)
+      railties (>= 5.2)
+      thread-local (>= 1.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -178,9 +192,20 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.1.0)
       railties (>= 6.0.0)
+    stimulus_reflex (3.5.0.pre9)
+      actioncable (>= 5.2)
+      actionpack (>= 5.2)
+      actionview (>= 5.2)
+      activesupport (>= 5.2)
+      cable_ready (>= 5.0.0.pre9)
+      nokogiri
+      rack
+      railties (>= 5.2)
+      redis
     tailwindcss-rails (2.0.14-arm64-darwin)
       railties (>= 6.0.0)
     thor (1.2.1)
+    thread-local (1.1.0)
     timeout (0.3.0)
     turbo-rails (1.3.0)
       actionpack (>= 6.0.0)
@@ -210,6 +235,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  cable_ready!
   capybara
   debug
   importmap-rails
@@ -221,6 +247,7 @@ DEPENDENCIES
   selenium-webdriver
   sprockets-rails
   stimulus-rails
+  stimulus_reflex (= 3.5.0.pre9)
   tailwindcss-rails
   turbo-rails
   tzinfo-data
