@@ -1,13 +1,11 @@
 // Import and register all your controllers from the importmap under controllers/*
 
 import StimulusReflex from "stimulus_reflex";
-import { application } from "controllers/application";
+import { application } from "./application";
 import { cable } from "@hotwired/turbo-rails";
 
 // Eager load all controllers defined in the import map under controllers/**/*_controller
 import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading"
-import consumer from '../channels/consumer'
-import controller from '../controllers/application_controller'
 import CableReady from 'cable_ready'
 eagerLoadControllersFrom("controllers", application)
 
